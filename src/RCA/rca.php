@@ -6,13 +6,14 @@ use pocketmine\command\ConsoleCommandSender;
 use pocketmine\Player;
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\TextFormat;
- class wild extends PluginBase implements  Listener {
+
+class wild extends PluginBase implements  Listener {
 	
      public function onEnable(){
 		$this->getLogger()->info(TF::AQUA . "Enabled Plugin RCA by SinlesFlyer");
 	}
 
-    public function onCommand(CommandSender $sender, Command $command, $label, array $args){
+     public function onCommand(CommandSender $sender, Command $command, $label, array $args){
         switch(strtolower($command->getName())){
             case 'nothing':
                 return true;
