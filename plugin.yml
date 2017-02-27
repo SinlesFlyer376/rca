@@ -1,0 +1,12 @@
+name: RCA
+main: RCA\rca
+api: [2.1.0, 3.0.0]
+author: SinlesFlyer376
+description: RCA
+commands:
+     rca:
+       description: "Run commands as other players"
+       permission: rca.command
+permissions:
+     rca.command:
+         default: op
